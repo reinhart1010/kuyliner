@@ -1,5 +1,5 @@
 # KuyLiner
-**KuyLiner** is the continuation of the current [Food Navigator](https://github.com/reinhart1010/food-navigator) app with significant changes:
+**KuyLiner** is the continuation of the current [Food Navigator](https://github.com/reinhart1010/foodnavigator) app with significant changes:
 
 1. Uses Laravel instead of static page
 2. Further optimized for mobile
