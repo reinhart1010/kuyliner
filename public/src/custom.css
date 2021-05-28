@@ -1,0 +1,63 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+html,
+body,
+#map {
+    height: 100%;
+    width: 100%;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+.panel{
+  position: fixed;
+  z-index: 99;
+  overflow-y: auto;
+  top: 0;
+  width: 408px;
+  height: 100%;
+  left: 0;
+}
+.panel .card{
+  margin: 16px;
+  padding: 16px;
+  backdrop-filter: blur(32px);
+  background-color: #fff;
+  opacity: 0.9;
+  width: calc(100% - 48px);
+  border-radius: 16px;
+}
+@media screen and (max-width:1007px){
+  #map{
+    height: 60vh;
+  }
+  .panel{
+    position: absolute;
+    top: 60vh;
+    width: 100%;
+    height: auto;
+  }
+  .panel .card{
+    backdrop-filter: none;
+    opacity: 1;
+    width: calc(100% - 64px);
+    font-size: 0.9em;
+  }
+}
+.hidden{
+  visibility: hidden;
+}
+#nearby{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#nearby li {
+  border-top: 1px solid black;
+}
+#nearby li h3{
+  margin-bottom: 0;
+}
+#nearby li p{
+  margin-top: 0;
+}
